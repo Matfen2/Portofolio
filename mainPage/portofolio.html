@@ -33,70 +33,49 @@
 
     <div class="aboutMe">
         <h1 class="about">A propos de moi</h1>
-        <div class="presentMe">
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="src/myPictures/testImgOne.jpeg" class="img-fluid" style="width: 400px; height: 500px"></div>
-                    <div class="swiper-slide"><img src="src/myPictures/testImgTwo.jpeg" class="img-fluid" style="width: 400px; height: 500px"></div>
-                    <div class="swiper-slide"><img src="src/myPictures/testImgThree.jpeg" class="img-fluid" style="width: 400px; height: 500px"></div>
-                    <div class="swiper-slide"><img src="#" class="src/myPictures/testImgOne.jpeg" style="width: 400px; height: 500px"></div>
-                </div>
-    
-                <div class="swiper-pagination"></div>
-            </div>
+        <div class="row" id="myStory">
+            <div class="col-lg-4">
+                <div class="swiper mySwiper">
 
-            <div class="meIdentify" style="color: white;">
-                 <p class="describe">Description</p>
-                <p class="describeMe">............................................</p>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="src/myPictures/testImgOne.jpeg" class="img-fluid" alt="firstPhotoMe" style="width: 500px; height: 550px">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="src/myPictures/testImgTwo.jpeg" class="img-fluid" alt="firstPhotoMe" style="width: 500px; height: 550px">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="src/myPictures/testImgThree.jpeg" class="img-fluid" alt="firstPhotoMe" style="width: 500px; height: 550px">
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
+            
+            <div class="col-lg-8">
+               <div class="meIdentify" style="color: white; line-height: 65px;">
+                    <p class="describe">Description</p>
+                    <p class="describeMe" style="font-size: 2.1em;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div> 
+            </div>
+            
         </div>
     </div>
 
     <div class="Capacity">
         <h1 class="mySuperPower">Mes compétences/Mon CV</h1>
-            <div class="myTools">
-                <div class="myDivers">
-                    <ul class="myFrameworks">
-                        <p class="typeFrameworks">Front-End Frameworks :</p>
-                            <div class="listFrameworks">
-                                <li><img src="src/myDivers/htmlLogo.jpeg" class="img-fluid" alt="HTML" style="width: 400px; height: 250px; margin-right: 30px; margin-left: 30px"></li>
-                                <li><img src="src/myDivers/cssLogo.jpeg" class="img-fluid" alt="CSS" style="width: 250px; height: 250px; margin-right: 30px; margin-left: 30px"></li>
-                                <li><img src="src/myDivers/jsLogo.jpeg" class="img-fluid" alt="Javascript" style="width: 550px; height: 250px; margin-right: 30px; margin-left: 30px"></li>
-                                <li><img src="src/myDivers/sassLogo.jpeg" class="img-fluid" alt="SASS" style="width: 250px; height: 250px; margin-right: 30px; margin-left: 30px"></li>
-                                <li><img src="src/myDivers/bootstrapLogo.png" class="img-fluid" alt="Bootstrap" style="width: 400px; height: 250px; margin-right: 30px; margin-left: 30px"></li>
-                                <li><img src="src/myDivers/jqueryLogo.png" class="img-fluid" alt="Jquery" style="width: 400px; height: 250px; margin-right: 30px; margin-left: 30px"></li>
-                            </div>
-                    </ul>
-                    <ul class="myFrameworks">
-                        <p class="typeFrameworks">Back-End Frameworks :</p>
-                            <div class="listFrameworks">
-                                <li>NodeJs</li>
-                                <li>ExpressJs</li>
-                                <li>API</li>
-                            </div>
-                    </ul>
-                    <ul class="myFrameworks">
-                        <p class="typeFrameworks">Outils divers/logiciels :</p>
-                        <div class="listFrameworks">
-                            <li>Postman</li>
-                            <li>Git/Github</li>
-                            <li>HyperTerminal</li>
-                        </div>
-                    </ul>
-                </div>
+            
+        <div class="row mt-5" id="myListCapacities">
+            <div class="col-lg-8" id="typesFrameworks">
 
-                <div class="myCV">
-                    <img src="src/myPictures/testImgOne.jpeg" class="img-fluid" style="width: 500px; height: 600px">
-                    <button type="button" id="btnDownloadCV">Télécharger mon CV<i class="fa-solid fa-download"></i></button>
-                </div>
-            </div>        
+            </div>
+            <div class="col-lg-4" id="myCV" style="display: flex; flex-direction: column; border: 1px solid black; width: 400px;">
+                <img src="src/myPictures/testImgOne.jpeg" alt="MON CV" class="img-fluid" style="width: 400px; height: 600px">
+                <button type="button" id="btnDownload" style=" margin: 10px auto;">Télécharger mon CV<i class="fa-solid fa-download"></i></button>
+            </div>
+        </div>       
     </div>
-
-
-
-
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script><script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
