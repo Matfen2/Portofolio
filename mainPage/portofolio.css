@@ -40,7 +40,8 @@ body {
 }
 
 .aboutMe {
-  margin: 10px auto;
+  padding: 10px;
+  background-color: rgb(26, 25, 25);
 }
 .aboutMe .about {
   text-align: center;
@@ -48,4 +49,73 @@ body {
 .aboutMe .presentMe {
   display: flex;
   flex-direction: row;
+}
+.aboutMe .presentMe .swiper {
+  width: 100%;
+  height: 100%;
+}
+.aboutMe .presentMe .swiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+}
+.aboutMe .presentMe .swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.aboutMe .presentMe .swiper .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #ac1717;
+  background: rgba(175, 12, 12, 0.2);
+}
+.aboutMe .presentMe .swiper .swiper-pagination-bullet-active {
+  color: #fff;
+  background: #007aff;
+}
+
+.Capacity {
+  margin: 15px auto;
+}
+.Capacity .mySuperPower {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+}
+.Capacity .myTools {
+  -moz-column-gap: -120px;
+       column-gap: -120px;
+  justify-content: center;
+  margin: 10px auto;
+  display: block;
+  display: flex;
+  flex-direction: row;
+}
+.Capacity .myTools .myDivers {
+  display: flex;
+  flex-direction: column;
+}
+.Capacity .myTools .myDivers .myFrameworks {
+  margin-right: 35px;
+  margin-left: 35px;
+  display: flex;
+  flex-direction: column;
+}
+.Capacity .myTools .myDivers .myFrameworks .typeFrameworks {
+  font-size: 2em;
+  font-weight: bold;
+}
+.Capacity .myTools .myDivers .myFrameworks .listFrameworks {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+.Capacity .myCV {
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=portofolio.css.map */
