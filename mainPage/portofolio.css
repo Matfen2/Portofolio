@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: block;
+  margin: auto;
+}
+
+#me {
+  background-color: darkgray;
+}
+#me .navbar .navbar-brand {
+  padding: 5px;
+  width: 40px;
+  color: white;
+  border-radius: 50%;
+  background-color: black;
+  border: 1px solid black;
+}
+#me .navbar .navbar-nav .nav-link {
+  font-size: 1.4em;
+  margin-left: 40px;
+  margin-right: 40px;
+  font-weight: bold;
+}
+#me .navbar .navbar-nav #btnBars {
+  display: none;
+}
+#me .myProfil {
+  height: 700px;
+  text-align: center;
+  position: relative;
+  top: -30%;
+  left: 0%;
+  transform: translate(0%, 35%);
+}
+#me .myProfil .myJobs {
+  font-size: 1.6em;
+}
+
+.aboutMe {
+  margin: 10px auto;
+}
+.aboutMe .about {
+  text-align: center;
+}
+.aboutMe .presentMe {
+  display: flex;
+  flex-direction: row;
+}/*# sourceMappingURL=portofolio.css.map */

@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: block;
+    margin: auto;
+}
+
+@mixin flex ($flexDirection) {
+    display: flex;
+    flex-direction: $flexDirection;
+}
+
+// SECTION ME
+#me {
+    background-color: darkgray;
+    .navbar {
+    .navbar-brand {
+        padding: 5px;
+        width: 40px;
+        color: white;
+        border-radius: 50%;
+        background-color: black;
+        border: 1px solid black;
+    }
+    .navbar-nav {
+        .nav-link {
+            font-size: 1.4em;
+            margin-left: 40px;
+            margin-right: 40px;
+            font-weight: bold;
+        }
+        #btnBars {
+            display: none;
+        }
+    }
+}
+
+    .myProfil {
+        height: 700px;
+        text-align: center;
+        position: relative;
+        top: -30%;
+        left: 0%;
+        transform: translate(0%, 35%);
+        .myJobs {
+            font-size: 1.6em;
+        }
+    }
+}
+
+// About Me
+.aboutMe {
+    margin: 10px auto;
+    .about {
+        text-align: center;
+    }
+    .presentMe {
+        @include flex (row);
+    }
+}
