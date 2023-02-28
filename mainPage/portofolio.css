@@ -24,7 +24,10 @@ body {
   margin-right: 40px;
   font-weight: bold;
 }
-#me .navbar .navbar-nav #btnBars {
+#me .navbar #btnBars {
+  background: transparent;
+  border: transparent;
+  font-size: 1.6em;
   display: none;
 }
 #me .myProfil {
@@ -50,4 +53,149 @@ body {
 }
 .aboutMe #myStory {
   padding: 20px;
+}
+.aboutMe #myStory .swiper {
+  width: 100%;
+  height: 100%;
+}
+.aboutMe #myStory .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #b6a6a6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aboutMe #myStory .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#myProjets {
+  margin: 20px auto;
+  padding: 10px 0px 30px 0px;
+  background-color: rgb(48, 48, 48);
+}
+#myProjets .nameProjet {
+  text-align: center;
+  font-size: 2.1em;
+  font-weight: bold;
+}
+#myProjets #listProjets {
+  margin: 20px auto;
+  text-align: center;
+}
+#myProjets .lienProjets {
+  text-align: center;
+}
+#myProjets .lienProjets .lien {
+  color: azure;
+  font-weight: bold;
+  text-decoration: none;
+}
+#myProjets .lienProjets .lien:hover {
+  color: darkred;
+}
+
+#contact .titleContact {
+  text-align: center;
+}
+#contact .contactModal {
+  display: block;
+  margin: 10px auto;
+  width: 100%;
+  max-width: 1200px;
+  border-radius: 40px;
+  background-color: black;
+  border: 1px solid black;
+  padding: 20px;
+}
+#contact .contactModal #youContact #contactMe {
+  margin-left: 10px;
+  text-align: center;
+}
+#contact .contactModal #youContact input[type=text],
+#contact .contactModal #youContact textarea {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 100%;
+  max-width: 710px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+#contact .contactModal #youContact input[type=text]::-moz-placeholder, #contact .contactModal #youContact textarea::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+#contact .contactModal #youContact input[type=text]::placeholder,
+#contact .contactModal #youContact textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+#contact .contactModal #youContact textarea {
+  resize: none;
+  height: 200px;
+}
+#contact .contactModal #myListContact {
+  display: block;
+  margin: 15px auto;
+  line-height: 45px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+#contact .contactModal #myListContact p {
+  color: azure;
+}
+#contact .contactModal #myListContact .fa-regular {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 1.6em;
+  width: 60px;
+  border-radius: 50%;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgb(255, 255, 255);
+}
+#contact .contactModal #myListContact .fa-phone, #contact .contactModal #myListContact .fa-envelope, #contact .contactModal #myListContact .fa-linkedin-in {
+  color: azure;
+}
+#contact .contactModal #myListContact .fa-brands {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 1.6em;
+  width: 60px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgb(255, 255, 255);
+}
+#contact .contactModal #btnSend {
+  display: block;
+  margin: 0 auto;
+  margin-top: -20px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+#contact .contactModal #btnSend:hover {
+  background-color: #3E8E41;
+}
+
+@media screen and (max-width: 992px) {
+  #me .navbar .navbar-nav {
+    display: none;
+  }
+  #me .navbar #btnBars {
+    display: block;
+  }
 }/*# sourceMappingURL=portofolio.css.map */
