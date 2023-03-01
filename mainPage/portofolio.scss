@@ -112,6 +112,26 @@ body {
             }
         }
     }
+
+// Capacity
+.Capacity {
+  .mySuperPower {
+    margin: 5px auto;
+    text-align: center;
+  }
+  #myListCapacities {
+    .nameFrameworks {
+      font-size: 1.8em;
+      font-weight: bold;
+    }
+    .listFrameworks {
+      display: flex;
+      flex-wrap: wrap;
+      list-style-type: none;
+    }
+  }
+
+}
     
 //Contact
 #contact {
