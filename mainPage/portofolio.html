@@ -46,12 +46,6 @@
                         <div class="swiper-slide">
                             <img src="src/myPictures/testImgOne.jpeg" alt="photoMe" class="img-fluid" style="width: 100%; height: auto; height: 450px;">
                         </div>
-                        <div class="swiper-slide">
-                            <img src="src/myPictures/testImgTwo.jpeg" alt="photoMe" class="img-fluid" style="width: 100%; height: auto; height: 450px;">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="src/myPictures/testImgThree.jpeg" alt="photoMe" class="img-fluid" style="width: 100%; height: auto; height: 450px;">
-                        </div>
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
@@ -73,27 +67,19 @@
                 <ul>
                     <p class="nameFrameworks">Front End Frameworks :</p>
                     <div class="listFrameworks">
-                            <li><img src="src/myDivers/htmlLogo.jpeg" alt="HTML" class="img-fluid m-5" style="max-width: 100%; height: auto; width: 300px; height: 200px"></li>
-                            <li><img src="src/myDivers/cssLogo.jpeg" alt="CSS" class="img-fluid m-5" style="max-width: 100%; height: auto; width: 220px; height: 200px"></li>
-                            <li><img src="src/myDivers/jsLogo.jpeg" alt="JAVASCRIPT" class="img-fluid m-5" style="max-width: 100%; height: auto; width: 300px; height: 200px"></li>
-                            <li><img src="src/myDivers/sassLogo.jpeg" alt="SASS" class="img-fluid m-5" style="max-width: 100%; height: auto; width: 300px; height: 200px"></li>
-                 
-                            <li><img src="src/myDivers/bootstrapLogo.png" alt="BOOTSTRAP" class="img-fluid m-5" style="max-width: 100%; height: auto; width: 380px; height: 200px"></li>
-                            <li><img src="src/myDivers/jqueryLogo.png" alt="JQUERY" class="img-fluid m-5" style="max-width: 100%; height: auto; width: 300px; height: 200px"></li>
+                            
                     </div>
                 </ul>
                 <ul>
                     <p class="nameFrameworks">Back End Frameworks :</p>
                     <div class="listFrameworks">
-                            <li><img src="src/myDivers/sqlLogo.png" alt="SQL" class="img-fluid m-5" style="max-width: 100%; height: auto; width: 300px; height: 200px"></li>
-                            <li><img src="src/myDivers/mongoDb.png" alt="MONGO DB" class="img-fluid m-5" style="max-width: 100%; height: auto; width: 300px; height: 200px"></li>
-                            <li><img src="src/myDivers/mongoose.png" alt="MONGOOSE" class="img-fluid m-5" style="max-width: 100%; height: auto; width: 300px; height: 200px"></li>
+                            
                     </div>
                 </ul>
                
             </div>
             <div class="col-lg-3" id="myCV" style="display: flex; flex-direction: column; padding-right: 20px;">
-                <img src="src/myPictures/testImgOne.jpeg" alt="MON CV" class="img-fluid" style="width: 100%; height: auto; height: 800px; width: 450px;">
+                <img src="src/myPictures/testImgOne.jpeg" alt="MON CV" class="img-fluid" style="width: 100%; height: auto; height: 800px; width: 410px;">
                 <button type="button" id="btnDownload" style=" margin: 10px auto;">Télécharger mon CV<i class="fa-solid fa-download"></i></button>
             </div>
         </div>       
@@ -159,18 +145,30 @@
     </section>
 
     <div class="modal fade" id="Steam" tabindex="-1" aria-labelledby="steamModal" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="steamModal">Titre de la fenêtre modale</h5>
+        <div class="modal-dialog modal-dialog-centered modal-xl" style="max-width: 900px; height: 900px;">
+            <div class="modal-content h-100">
+                <div class="modal-header" style="border: transparent">
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
-                    Contenu de la fenêtre modale
+                <div class="modal-body d-flex flex-row">
+                    <div class="col-lg-8">
+                        <img src="src/myPictures/testImgThree.jpeg" id="mainImage" class="img-fluid" style="height: 750px; width: 600px;">
+                    </div>
+                    <div class="col-lg-4 d-flex flex-column" id="pictProjet">
+                        <img src="src/myPictures/testImgOne.jpeg" class="img-fluid" style="height: 180px; width: 250px; margin: 0px 10px 10px 20px;">
+                        <img src="src/myPictures/testImgTwo.jpeg" class="img-fluid" style="height: 180px; width: 250px; margin: 0px 10px 10px 20px;">
+                        <img src="src/myPictures/testImgThree.jpeg" class="img-fluid" style="height: 180px; width: 250px; margin: 0px 10px 10px 20px;">
+                        <img src="src/myPictures/testImgThree.jpeg" class="img-fluid" style="height: 180px; width: 250px; margin: 0px 10px 10px 20px;">
+                    </div>
                 </div>
-            </div>
-        </div>
+      <div class="modal-footer d-block m-auto" style="border: transparent">
+        Lien Github : "............................................."
+        Lien Url : "............................................."
+      </div>
     </div>
+  </div>
+</div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

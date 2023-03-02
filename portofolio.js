@@ -17,3 +17,10 @@ app.get("/", function (req, res) {
 app.listen(port, function () {
     console.log("My files is reside on port server 3000");
 })
+
+$(document).ready(function () {
+  $("#pictProjet img").click(function () {
+    var src = $(this).attr("src");
+    $("#mainImage").attr("src", src);
+  });
+});

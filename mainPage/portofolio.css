@@ -186,19 +186,6 @@ body {
   background-color: #3E8E41;
 }
 
-#Steam {
-  position: absolute;
-  top: -10%;
-  left: 50%;
-  transform: translate(-50%, 25%);
-  height: 750px;
-  border: 1px solid black;
-  border-radius: 40px;
-  background-color: cadetblue;
-  overflow: hidden;
-  padding: 10px;
-}
-
 @media screen and (max-width: 992px) {
   #me .navbar .navbar-nav {
     display: none;
