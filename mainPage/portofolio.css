@@ -54,25 +54,6 @@ body {
 .aboutMe #myStory {
   padding: 20px;
 }
-.aboutMe #myStory .swiper {
-  width: 100%;
-  height: 100%;
-}
-.aboutMe #myStory .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #b6a6a6;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.aboutMe #myStory .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
 
 #myProjets {
   margin: 20px auto;
@@ -203,6 +184,19 @@ body {
 }
 #contact .contactModal #btnSend:hover {
   background-color: #3E8E41;
+}
+
+#Steam {
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: translate(-50%, 25%);
+  height: 750px;
+  border: 1px solid black;
+  border-radius: 40px;
+  background-color: cadetblue;
+  overflow: hidden;
+  padding: 10px;
 }
 
 @media screen and (max-width: 992px) {
