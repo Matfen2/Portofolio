@@ -40,17 +40,17 @@ body {
     }
 }
 
-    .myProfil {
-        height: 700px;
-        text-align: center;
-        position: relative;
-        top: -30%;
-        left: 0%;
-        transform: translate(0%, 35%);
-        .myJobs {
-            font-size: 1.6em;
-        }
+.myProfil {
+  height: 700px;
+  text-align: center;
+  position: relative;
+  top: -30%;
+  left: 0%;
+  transform: translate(0%, 35%);
+    .myJobs {
+      font-size: 1.6em;
     }
+  }
 }
 
 // About Me
@@ -64,9 +64,23 @@ body {
     }
     #myStory {
         padding: 20px;
-        
+        flex-direction: row;
+        align-items: center;
+        img {
+          width: 100%;
+          height: auto;
+          height: 650px;
+        }
       }
-    }
+        .meIdentify {
+          color: white;
+          line-height: 65px;
+          .describeMe {
+            font-size: 2.1em;
+          }
+        }
+      }
+    
 
     #myProjets {
         margin: 20px auto;
@@ -109,6 +123,36 @@ body {
       display: flex;
       flex-wrap: wrap;
       list-style-type: none;
+    }
+    .myCV {
+    
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      .img-fluid {
+        max-width: 100%;
+        height: auto;
+        border: 1px solid black;
+      }
+      #btnDownload {
+        width: 60%;
+        padding: 10px;
+        color: azure;
+        cursor: pointer;
+        display: block;
+        margin: auto;
+        border-radius: 40px;
+        border: 1px solid black;
+        background-color: darkred;
+        transition: all 0.25ms ease;
+        &:active {
+          transform: translateY(8px);
+        }
+        a {
+          font-size: 1.3em;
+          text-decoration: none;
+        }
+      }
     }
   }
 
@@ -230,5 +274,22 @@ body {
                 display: block;
             }
         }
+    }
+    #my-capacity {
+      .myCV {
+        display: block;
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+        max-width: 60%;
+        height: auto;
+      }
+    }
+    #myProjets {
+      #listProjets {
+        img {
+          margin: 10px auto; 
+        }
+      }
     }
 }
