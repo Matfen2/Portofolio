@@ -14,11 +14,13 @@ body {
 
 // SECTION ME
 #me {
-    background-color: darkgray;
     .navbar {
     .navbar-brand {
-        padding: 5px;
-        width: 40px;
+        font-family: fastHand;
+        font-size: 2.0em;
+        padding: 7px;
+        width: 60px;
+        height: 60px;
         color: white;
         border-radius: 50%;
         background-color: black;
@@ -26,7 +28,9 @@ body {
     }
     .navbar-nav {
         .nav-link {
-            font-size: 1.4em;
+            font-family: linkStart;
+            letter-spacing: 6px;
+            font-size: 1.6em;
             margin-left: 40px;
             margin-right: 40px;
             font-weight: bold;
@@ -41,14 +45,22 @@ body {
 }
 
 .myProfil {
+  color:darkred;
   height: 700px;
   text-align: center;
   position: relative;
   top: -30%;
   left: 0%;
   transform: translate(0%, 35%);
-    .myJobs {
-      font-size: 1.6em;
+  .myName {
+    font-family: emizen;
+    letter-spacing: 6px;
+    font-size: 3.2em;
+  }
+  .myJobs {
+      font-size: 1.8em;
+      font-family: olney;
+      text-shadow: 0px 0px 5px #fcfcfc;
     }
   }
 }
@@ -61,6 +73,8 @@ body {
         color: azure;
         font-size: 2.1em;
         text-align: center;
+        font-family: emizen;
+        letter-spacing: 4px;
     }
     #myStory {
         padding: 20px;
@@ -69,14 +83,17 @@ body {
         img {
           width: 100%;
           height: auto;
-          height: 650px;
+          height: 500px;
         }
       }
         .meIdentify {
           color: white;
           line-height: 65px;
           .describeMe {
-            font-size: 2.1em;
+            font-family: olney;
+            font-size: 1.6em;
+            letter-spacing: 2px;
+            
           }
         }
       }
@@ -85,7 +102,7 @@ body {
     #myProjets {
         margin: 20px auto;
         padding: 10px 0px 30px 0px;
-       background-color: rgb(48, 48, 48);
+        background-color: rgb(48, 48, 48);
        .nameProjet {
             text-align: center;
             font-size: 2.1em;
@@ -113,9 +130,13 @@ body {
   .mySuperPower {
     margin: 5px auto;
     text-align: center;
+    letter-spacing: 4px;
+    font-family: emizen;
   }
   #myListCapacities {
     .nameFrameworks {
+      font-family: linkStart;
+      letter-spacing: 6px;
       font-size: 1.8em;
       font-weight: bold;
     }
@@ -123,9 +144,15 @@ body {
       display: flex;
       flex-wrap: wrap;
       list-style-type: none;
+      .langageCode {
+        font-size: 1.3em;
+        font-family: olney;
+      }
+      .capacityCode {
+        font-size: 1.2em;
+      }
     }
     .myCV {
-    
       text-align: center;
       display: flex;
       flex-direction: column;
@@ -135,12 +162,13 @@ body {
         border: 1px solid black;
       }
       #btnDownload {
-        width: 60%;
+        width: 42%;
         padding: 10px;
         color: azure;
         cursor: pointer;
         display: block;
         margin: auto;
+        font-family: olney;
         border-radius: 40px;
         border: 1px solid black;
         background-color: darkred;
@@ -155,13 +183,36 @@ body {
       }
     }
   }
+}
 
+// Projets
+#myProjets {
+  .nameProjet {
+    color: azure;
+    letter-spacing: 4px;
+    font-family: emizen;
+  }
+  #listProjets {
+    margin: 20px auto;
+  }
+  .lienProjets {
+    .lien {
+      cursor: pointer;
+      font-size: 1.3em;
+      font-family: olney;
+      &:hover {
+        color: darkred;
+      }
+    }
+  }
 }
     
 //Contact
 #contact {
   .titleContact {
+    letter-spacing: 4px;
     text-align: center;
+    font-family: emizen;
   }
   
   .contactModal {
@@ -213,6 +264,8 @@ body {
 
       p {
         color: azure;
+        font-size: 1.3em;
+        font-family: olney;
       }
         .fa-regular {
             display: block;
@@ -248,14 +301,15 @@ body {
       margin-top: -20px;
       padding: 10px 20px;
       border: none;
-      background-color: #4CAF50;
+      background-color: darkred;
       color: white;
       border-radius: 5px;
       font-size: 1.2em;
       cursor: pointer;
-
-      &:hover {
-        background-color: #3E8E41;
+      transition: all 0.25ms ease;
+      &:active {
+        transform: translateY(8px);
+        background-color: #075509;
       }
     }
   }
@@ -292,4 +346,30 @@ body {
         }
       }
     }
+}
+
+// FONTS
+@font-face {
+  font-family: emizen;
+  src: url(fonts/Emizen.otf);
+}
+
+@font-face {
+  font-family: linkStart;
+  src: url(fonts/LinkStart.otf);
+}
+
+@font-face {
+  font-family: RoundControl;
+  src: url(fonts/RoundControl.otf);
+}
+
+@font-face {
+  font-family: olney;
+  src: url(fonts/OlneyLigth.otf);
+}
+
+@font-face {
+  font-family: fastHand;
+  src: url(fonts/FastHand.otf);
 }

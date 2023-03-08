@@ -1,5 +1,8 @@
-// SELECT IMAGE TO CENTER
-
-
-// DOWNLOAD MY CV
-
+// SWIPER JS
+var swiper = new Swiper(".mySwiper", {
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
