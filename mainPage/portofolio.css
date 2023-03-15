@@ -7,6 +7,9 @@ body {
   margin: auto;
 }
 
+#me {
+  background-image: url("../src/WallpaperDog-11017422.jpg");
+}
 #me .navbar .navbar-brand {
   font-family: fastHand;
   font-size: 2em;
@@ -19,12 +22,16 @@ body {
   border: 1px solid black;
 }
 #me .navbar .navbar-nav .nav-link {
+  color: azure;
   font-family: linkStart;
   letter-spacing: 6px;
   font-size: 1.6em;
   margin-left: 40px;
   margin-right: 40px;
   font-weight: bold;
+}
+#me .navbar .navbar-nav .nav-link:hover {
+  color: darkred;
 }
 #me .navbar #btnBars {
   background: transparent;
@@ -33,7 +40,7 @@ body {
   display: none;
 }
 #me .myProfil {
-  color: darkred;
+  color: rgb(165, 8, 165);
   height: 700px;
   text-align: center;
   position: relative;
@@ -42,14 +49,21 @@ body {
   transform: translate(0%, 35%);
 }
 #me .myProfil .myName {
+  width: 30%;
+  display: block;
+  margin: auto;
+  background-color: #171a21;
+  border: 1px solid black;
+  border-radius: 40px;
   font-family: emizen;
   letter-spacing: 6px;
   font-size: 3.2em;
 }
 #me .myProfil .myJobs {
-  font-size: 1.8em;
+  font-size: 1.9em;
   font-family: olney;
-  text-shadow: 0px 0px 5px #fcfcfc;
+  color: rgb(0, 0, 87);
+  text-shadow: 1px 2px 0px rgba(92, 11, 0, 0.274);
 }
 
 .aboutMe {
@@ -109,13 +123,23 @@ body {
   color: darkred;
 }
 
+.Capacity {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-image: url(../src/WallpaperDog-17165859.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 .Capacity .mySuperPower {
+  color: azure;
   margin: 5px auto;
   text-align: center;
   letter-spacing: 4px;
   font-family: emizen;
 }
 .Capacity #myListCapacities .nameFrameworks {
+  color: azure;
   font-family: linkStart;
   letter-spacing: 6px;
   font-size: 1.8em;
@@ -127,10 +151,12 @@ body {
   list-style-type: none;
 }
 .Capacity #myListCapacities .listFrameworks .langageCode {
+  color: azure;
   font-size: 1.3em;
   font-family: olney;
 }
 .Capacity #myListCapacities .listFrameworks .capacityCode {
+  color: azure;
   font-size: 1.2em;
 }
 .Capacity #myListCapacities .myCV {
@@ -144,7 +170,7 @@ body {
   border: 1px solid black;
 }
 .Capacity #myListCapacities .myCV #btnDownload {
-  width: 42%;
+  width: 45%;
   padding: 10px;
   color: azure;
   cursor: pointer;
@@ -164,13 +190,24 @@ body {
   text-decoration: none;
 }
 
+#myProjets {
+  margin-top: -16px;
+}
 #myProjets .nameProjet {
   color: azure;
   letter-spacing: 4px;
   font-family: emizen;
 }
-#myProjets #listProjets {
-  margin: 20px auto;
+#myProjets #listProjets .col-lg-4 img.img-fluid {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+#myProjets #listProjets .col-lg-4 img.img-fluid:hover {
+  opacity: 0.5;
 }
 #myProjets .lienProjets .lien {
   cursor: pointer;
@@ -181,10 +218,16 @@ body {
   color: darkred;
 }
 
+#contact {
+  margin-top: -20px;
+  padding: 20px;
+  background-image: url(../src/imgContactBackground.jpeg);
+}
 #contact .titleContact {
   letter-spacing: 4px;
   text-align: center;
   font-family: emizen;
+  color: azure;
 }
 #contact .contactModal {
   display: block;
@@ -278,13 +321,15 @@ body {
   background-color: #075509;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1175px) {
   #me .navbar .navbar-nav {
     display: none;
   }
   #me .navbar #btnBars {
     display: block;
   }
+}
+@media screen and (max-width: 992px) {
   #my-capacity .myCV {
     display: block;
     margin: auto;
