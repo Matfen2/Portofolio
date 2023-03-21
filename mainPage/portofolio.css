@@ -322,102 +322,143 @@ body {
   background-color: #075509;
 }
 
-#Steam .modal-dialog .modal-content {
+#GameWorld .modal-dialog .modal-content {
   color: azure;
   background-image: url(../src/myProjets/steamBackground.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-#Steam .modal-dialog .modal-content .btn-close {
+#GameWorld .modal-dialog .modal-content .btn-close {
   position: relative;
   top: 10px;
   left: 10px;
 }
-#Steam .modal-dialog .modal-content .modal-header {
+#GameWorld .modal-dialog .modal-content .modal-header {
   border: transparent;
 }
-#Steam .modal-dialog .modal-content .modal-header #SteamLabel {
+#GameWorld .modal-dialog .modal-content .modal-header #GameLabel {
   letter-spacing: 4px;
   font-family: emizen;
   font-size: 1.6em;
 }
-#Steam .modal-dialog .modal-content .modal-body {
+#GameWorld .modal-dialog .modal-content .modal-body {
   border: transparent;
 }
-#Steam .modal-dialog .modal-content .modal-body .row .col-lg-4 .drivers {
+#GameWorld .modal-dialog .modal-content .modal-body .row .col-lg-4 .drivers {
   font-family: olney;
   font-size: 1.6em;
 }
-#Steam .modal-dialog .modal-content .modal-body .row .col-lg-4 .langages {
+#GameWorld .modal-dialog .modal-content .modal-body .row .col-lg-4 .langages {
   display: flex;
   flex-direction: row;
   line-height: 80px;
   padding: 10px;
   justify-content: space-between;
 }
-#Steam .modal-dialog .modal-content .modal-body .row .col-lg-4 .langages .list .codes {
+#GameWorld .modal-dialog .modal-content .modal-body .row .col-lg-4 .langages .list .codes {
   font-size: 1.5em;
   font-family: linkStart;
 }
-#Steam .modal-dialog .modal-content .modal-footer {
+#GameWorld .modal-dialog .modal-content .modal-footer {
   border: transparent;
 }
-#Steam .modal-dialog .modal-content .modal-footer p {
+#GameWorld .modal-dialog .modal-content .modal-footer p {
   margin-right: 15px;
   margin-left: 15px;
   font-size: 1.3em;
   font-family: olney;
 }
 
-#Tesla .modal-dialog .modal-content {
+#BackWorld .modal-dialog .modal-content {
   color: azure;
   background-image: url(../src/myProjets/steamBackground.jpeg);
 }
-#Tesla .modal-dialog .modal-content .btn-close {
+#BackWorld .modal-dialog .modal-content .btn-close {
   position: relative;
   top: 10px;
   left: 10px;
 }
-#Tesla .modal-dialog .modal-content .modal-header {
+#BackWorld .modal-dialog .modal-content .modal-header {
   border: transparent;
 }
-#Tesla .modal-dialog .modal-content .modal-header #teslaLabel {
+#BackWorld .modal-dialog .modal-content .modal-header #backLabel {
   letter-spacing: 4px;
   font-family: emizen;
   font-size: 1.6em;
 }
-#Tesla .modal-dialog .modal-content .modal-body {
+#BackWorld .modal-dialog .modal-content .modal-body {
   border: transparent;
 }
-#Tesla .modal-dialog .modal-content .modal-body p {
+#BackWorld .modal-dialog .modal-content .modal-body p {
   text-align: center;
   font-size: 1.6em;
 }
 
-#Mods .modal-dialog .modal-content {
+#Nexus .modal-dialog .modal-content {
   color: azure;
   background-image: url(../src/myProjets/steamBackground.jpeg);
 }
-#Mods .modal-dialog .modal-content .btn-close {
+#Nexus .modal-dialog .modal-content .btn-close {
   position: relative;
   top: 10px;
   left: 10px;
 }
-#Mods .modal-dialog .modal-content .modal-header {
+#Nexus .modal-dialog .modal-content .modal-header {
   border: transparent;
 }
-#Mods .modal-dialog .modal-content .modal-header #modsLabel {
+#Nexus .modal-dialog .modal-content .modal-header #nexusLabel {
   letter-spacing: 4px;
   font-family: emizen;
   font-size: 1.6em;
 }
-#Mods .modal-dialog .modal-content .modal-body {
+#Nexus .modal-dialog .modal-content .modal-body {
   border: transparent;
 }
-#Mods .modal-dialog .modal-content .modal-body p {
+#Nexus .modal-dialog .modal-content .modal-body p {
   text-align: center;
   font-size: 1.6em;
+}
+
+#sideCanvas {
+  background-color: #171a21;
+  height: 200px;
+}
+#sideCanvas .offcanvas-header .myLogo {
+  font-family: fastHand;
+  margin-left: 10px;
+  font-size: 2em;
+  padding: 7px;
+  width: 60px;
+  height: 60px;
+  color: white;
+  border-radius: 50%;
+  background-color: black;
+  border: 1px solid black;
+}
+#sideCanvas .offcanvas-header #btnCloseSideCanvas {
+  background: transparent;
+  border: transparent;
+  color: darkred;
+  margin-bottom: 30px;
+  font-size: 2em;
+}
+#sideCanvas .offcanvas-body .listCanvas {
+  justify-content: center;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 48px;
+       column-gap: 48px;
+}
+#sideCanvas .offcanvas-body .listCanvas .canvas-link {
+  width: 100%;
+  text-decoration: none;
+  color: azure;
+  font-family: linkStart;
+  letter-spacing: 6px;
+  font-size: 1.4em;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 1355px) {
@@ -457,7 +498,13 @@ body {
     flex-direction: row;
   }
   #contact .contactModal .row #btnSend {
-    margin-top: 10px;
+    margin-top: 30px;
+  }
+  .langages {
+    text-align: center;
+  }
+  .drivers {
+    text-align: center;
   }
 }
 @media screen and (max-width: 855px) {
@@ -468,6 +515,9 @@ body {
 @media screen and (max-width: 733px) {
   #me .container-fluid .myProfil .myName {
     width: 85%;
+  }
+  .myCapacity .row .col-lg-8 .nameFrameworks .listFrameworks #colorCode {
+    color: black;
   }
 }
 @font-face {

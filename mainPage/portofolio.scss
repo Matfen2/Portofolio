@@ -362,7 +362,7 @@ body {
 }
 
 // STEAM
-#Steam {
+#GameWorld {
   .modal-dialog {
     .modal-content {
       color: azure;
@@ -377,7 +377,7 @@ body {
       }
       .modal-header {
         border: transparent;
-        #SteamLabel {
+        #GameLabel {
           letter-spacing: 4px;
           font-family: emizen;
           font-size: 1.6em;
@@ -420,7 +420,7 @@ body {
 }
 
 // TESLA
-#Tesla {
+#BackWorld {
   .modal-dialog {
     .modal-content {
       color: azure;
@@ -432,7 +432,7 @@ body {
       }
       .modal-header {
         border: transparent;
-        #teslaLabel {
+        #backLabel {
           letter-spacing: 4px;
           font-family: emizen;
           font-size: 1.6em;
@@ -451,7 +451,7 @@ body {
 }
 
 // Mods
-#Mods {
+#Nexus {
   .modal-dialog {
     .modal-content {
       color: azure;
@@ -463,7 +463,7 @@ body {
       }
       .modal-header {
         border: transparent;
-        #modsLabel {
+        #nexusLabel {
           letter-spacing: 4px;
           font-family: emizen;
           font-size: 1.6em;
@@ -477,6 +477,50 @@ body {
         }
       }
       
+    }
+  }
+}
+
+// Offcanvas
+#sideCanvas {
+  background-color: #171a21;
+  height: 200px;
+  .offcanvas-header {
+    .myLogo {
+      font-family: fastHand;
+        margin-left: 10px;
+        font-size: 2.0em;
+        padding: 7px;
+        width: 60px;
+        height: 60px;
+        color: white;
+        border-radius: 50%;
+        background-color: black;
+        border: 1px solid black;
+    }
+    #btnCloseSideCanvas {
+      background: transparent;
+      border: transparent;
+      color: darkred;
+      margin-bottom: 30px;
+      font-size: 2.0em;
+    }
+  }
+  .offcanvas-body {
+    .listCanvas {
+      justify-content: center;
+      list-style-type: none;
+      @include flex (row);
+      column-gap: 48px;
+      .canvas-link {
+        width: 100%;
+        text-decoration: none;
+        color: azure;
+          font-family: linkStart;
+          letter-spacing: 6px;
+          font-size: 1.4em;
+          font-weight: bold;
+      }
     }
   }
 }
@@ -542,12 +586,21 @@ body {
             @include flex (row);
           }
           #btnSend {
-            margin-top: 10px;
+            margin-top: 30px;
           }
         }
       }
     }
+
+    .langages {
+    text-align: center;
+  }
+
+  .drivers {
+    text-align: center;
+  }
 }
+
 
 @media screen and (max-width: 855px) {
   #me {
@@ -567,6 +620,19 @@ body {
       .myProfil {
         .myName {
           width: 85%;
+        }
+      }
+    }
+  }
+  .myCapacity {
+    .row {
+      .col-lg-8 {
+        .nameFrameworks {
+          .listFrameworks {
+            #colorCode {
+              color: black;
+            }
+          }
         }
       }
     }
