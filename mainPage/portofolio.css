@@ -12,6 +12,7 @@ body {
 }
 #me .navbar .navbar-brand {
   font-family: fastHand;
+  margin-left: 10px;
   font-size: 2em;
   padding: 7px;
   width: 60px;
@@ -49,7 +50,7 @@ body {
   transform: translate(0%, 35%);
 }
 #me .myProfil .myName {
-  width: 30%;
+  width: 35%;
   display: block;
   margin: auto;
   background-color: #171a21;
@@ -85,7 +86,7 @@ body {
 .aboutMe #myStory img {
   width: 100%;
   height: auto;
-  height: 500px;
+  height: 600px;
 }
 .aboutMe .meIdentify {
   color: white;
@@ -125,7 +126,7 @@ body {
 
 .Capacity {
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   background-image: url(../src/WallpaperDog-17165859.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -279,7 +280,7 @@ body {
   font-size: 1.3em;
   font-family: olney;
 }
-#contact .contactModal #myListContact .fa-regular {
+#contact .contactModal #myListContact .fa-regular, #contact .contactModal #myListContact .fa-solid {
   display: block;
   margin: 10px auto;
   padding: 10px;
@@ -321,6 +322,109 @@ body {
   background-color: #075509;
 }
 
+#Steam .modal-dialog .modal-content {
+  color: azure;
+  background-image: url(../src/myProjets/steamBackground.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#Steam .modal-dialog .modal-content .btn-close {
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+#Steam .modal-dialog .modal-content .modal-header {
+  border: transparent;
+}
+#Steam .modal-dialog .modal-content .modal-header #SteamLabel {
+  letter-spacing: 4px;
+  font-family: emizen;
+  font-size: 1.6em;
+}
+#Steam .modal-dialog .modal-content .modal-body {
+  border: transparent;
+}
+#Steam .modal-dialog .modal-content .modal-body .row .col-lg-4 .drivers {
+  font-family: olney;
+  font-size: 1.6em;
+}
+#Steam .modal-dialog .modal-content .modal-body .row .col-lg-4 .langages {
+  display: flex;
+  flex-direction: row;
+  line-height: 80px;
+  padding: 10px;
+  justify-content: space-between;
+}
+#Steam .modal-dialog .modal-content .modal-body .row .col-lg-4 .langages .list .codes {
+  font-size: 1.5em;
+  font-family: linkStart;
+}
+#Steam .modal-dialog .modal-content .modal-footer {
+  border: transparent;
+}
+#Steam .modal-dialog .modal-content .modal-footer p {
+  margin-right: 15px;
+  margin-left: 15px;
+  font-size: 1.3em;
+  font-family: olney;
+}
+
+#Tesla .modal-dialog .modal-content {
+  color: azure;
+  background-image: url(../src/myProjets/steamBackground.jpeg);
+}
+#Tesla .modal-dialog .modal-content .btn-close {
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+#Tesla .modal-dialog .modal-content .modal-header {
+  border: transparent;
+}
+#Tesla .modal-dialog .modal-content .modal-header #teslaLabel {
+  letter-spacing: 4px;
+  font-family: emizen;
+  font-size: 1.6em;
+}
+#Tesla .modal-dialog .modal-content .modal-body {
+  border: transparent;
+}
+#Tesla .modal-dialog .modal-content .modal-body p {
+  text-align: center;
+  font-size: 1.6em;
+}
+
+#Mods .modal-dialog .modal-content {
+  color: azure;
+  background-image: url(../src/myProjets/steamBackground.jpeg);
+}
+#Mods .modal-dialog .modal-content .btn-close {
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+#Mods .modal-dialog .modal-content .modal-header {
+  border: transparent;
+}
+#Mods .modal-dialog .modal-content .modal-header #modsLabel {
+  letter-spacing: 4px;
+  font-family: emizen;
+  font-size: 1.6em;
+}
+#Mods .modal-dialog .modal-content .modal-body {
+  border: transparent;
+}
+#Mods .modal-dialog .modal-content .modal-body p {
+  text-align: center;
+  font-size: 1.6em;
+}
+
+@media screen and (max-width: 1355px) {
+  #me .container-fluid .myProfil .myName {
+    width: 60%;
+  }
+}
 @media screen and (max-width: 1175px) {
   #me .navbar .navbar-nav {
     display: none;
@@ -330,6 +434,13 @@ body {
   }
 }
 @media screen and (max-width: 992px) {
+  #my-capacity #myListCapacities .nameFrameworks {
+    margin: 10px auto;
+    text-align: center;
+  }
+  #my-capacity #myListCapacities .listFrameworks {
+    justify-content: space-around;
+  }
   #my-capacity .myCV {
     display: block;
     margin: auto;
@@ -340,6 +451,23 @@ body {
   }
   #myProjets #listProjets img {
     margin: 10px auto;
+  }
+  #contact .contactModal .row #myListContact {
+    display: flex;
+    flex-direction: row;
+  }
+  #contact .contactModal .row #btnSend {
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 855px) {
+  #me .container-fluid .myProfil .myName {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 733px) {
+  #me .container-fluid .myProfil .myName {
+    width: 85%;
   }
 }
 @font-face {
