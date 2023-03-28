@@ -139,6 +139,9 @@ body {
   letter-spacing: 4px;
   font-family: emizen;
 }
+.Capacity #myListCapacities {
+  margin: 20px auto;
+}
 .Capacity #myListCapacities .nameFrameworks {
   color: azure;
   font-family: linkStart;
@@ -501,9 +504,12 @@ body {
     margin-top: 30px;
   }
   .langages {
-    text-align: center;
+    display: block;
+    margin: auto;
+    width: 100%;
   }
   .drivers {
+    margin-top: 10px;
     text-align: center;
   }
 }
@@ -518,6 +524,29 @@ body {
   }
   .myCapacity .row .col-lg-8 .nameFrameworks .listFrameworks #colorCode {
     color: black;
+  }
+  .myContact #myListContact .fa-regular, .myContact #myListContact .fa-solid, .myContact #myListContact .fa-brands {
+    height: 65%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .myContact #myListContact {
+    align-items: center;
+  }
+  .myContact #myListContact .fa-regular, .myContact #myListContact .fa-solid, .myContact #myListContact .fa-brands {
+    height: 50%;
+    width: 60px;
+  }
+  .myContact #myListContact .fa-regular .fa-phone p, .myContact #myListContact .fa-solid .fa-phone p, .myContact #myListContact .fa-brands .fa-phone p {
+    line-height: -10px;
+  }
+}
+@media screen and (max-width: 595px) {
+  .myContact #myListContact .fa-regular, .myContact #myListContact .fa-solid, .myContact #myListContact .fa-brands {
+    height: 30%;
+  }
+  #sideCanvas .offcanvas-body .listCanvas {
+    width: 80%;
   }
 }
 @font-face {

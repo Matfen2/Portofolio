@@ -154,6 +154,7 @@ body {
     font-family: emizen;
   }
   #myListCapacities {
+    margin: 20px auto;
     .nameFrameworks {
       color: azure;
       font-family: linkStart;
@@ -593,10 +594,14 @@ body {
     }
 
     .langages {
-    text-align: center;
+      display: block;
+      margin: auto;
+      width: 100%;
+   
   }
 
   .drivers {
+    margin-top: 10px;
     text-align: center;
   }
 }
@@ -637,9 +642,49 @@ body {
       }
     }
   }
+  .myContact {
+    #myListContact {
+      .fa-regular, .fa-solid, .fa-brands {
+        height: 65%;
+      }
+    }
+  }
 }
 
+@media screen and (max-width: 700px) {
+  .myContact {
+    #myListContact {
+      align-items: center;
+      .fa-regular, .fa-solid, .fa-brands {
+        height: 50%;
+        width: 60px;
+        .fa-phone {
+          p {
+            line-height: -10px;
+          }
+        }
+      }
+    }
+  }
+}
 
+@media screen and (max-width: 595px) {
+  .myContact {
+    #myListContact {
+      .fa-regular, .fa-solid, .fa-brands {
+        height: 30%;
+      }
+    }
+  }
+
+  #sideCanvas {
+    .offcanvas-body {
+      .listCanvas {
+        width: 80%;
+      }
+    }
+  }
+}
 
 // FONTS
 @font-face {
