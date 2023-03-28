@@ -2,7 +2,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const app = express();
-const port = process.env.PORT || 3000;
+const PORT = 3000;
 
 // lien de la page html avec css et js
 app.use(express.static("mainPage"));
@@ -14,7 +14,7 @@ app.get("/", function (req, res) {
 })
 
 // Port Server 3000
-app.listen(port, function () {
+app.listen(process.env.PORT || 3000, function () {
     console.log("My files is reside on port server 3000");
 })
 
